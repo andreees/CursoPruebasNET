@@ -86,7 +86,7 @@ namespace UPC.CursoPruebas.DL.DALC
                 throw;
             }
         }
-        
+
         public bool InsertarCurso(CursoBE objCursoBE)
         {
             String query;
@@ -96,7 +96,7 @@ namespace UPC.CursoPruebas.DL.DALC
             {
                 sConn = ConfigurationManager.ConnectionStrings["CSCursoPruebas"].ToString();
                 MySqlConnection con = new MySqlConnection(sConn);
-                query = "INSERT INTO curso(idcurso, nombre, codigo, creditos, requisitos, ciclo) VALUES('"+null+"','"+objCursoBE.Nombre+"','"+objCursoBE.Codigo+"',"+objCursoBE.Creditos.ToString()+",'"+objCursoBE.Requisitos+"',"+objCursoBE.Ciclo.ToString()+")";
+                query = "INSERT INTO curso(idcurso, nombre, codigo, creditos, requisitos, ciclo) VALUES('" + null + "','" + objCursoBE.Nombre + "','" + objCursoBE.Codigo + "'," + objCursoBE.Creditos.ToString() + ",'" + objCursoBE.Requisitos + "'," + objCursoBE.Ciclo.ToString() + ")";
                 MySqlDataAdapter da = new MySqlDataAdapter(query, con);
                 DataSet ds = new DataSet();
                 da.Fill(ds, "curso");
