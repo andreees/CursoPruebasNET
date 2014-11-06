@@ -13,21 +13,7 @@ namespace UPC.CursoPruebas.PL.UI.AppConsole
     {
         static void Main(string[] args)
         {
-            //if (InsertarCurso("aeiou", "s545", 5, "MA6", 5))
-            //    Console.WriteLine("EXITO");
-            //else
-            //    Console.WriteLine("FALLO");
-
-            //if (ActualizarCurso(5,"AAAAAAA", "s545", 5, "MA6", 5))
-            //    Console.WriteLine("EXITO");
-            //else
-            //    Console.WriteLine("FALLO");
-
-            //if(EliminarCurso(13))
-            //    Console.WriteLine("EXITO");
-            //else
-            //    Console.WriteLine("FALLO");
-            InsertarCurso("xxx", "xxx", 69, "xxx", 69);
+            InsertarCurso("ggg", "gggg", 5, "gggg", 5);
 
         }
         static void ListarTodo()
