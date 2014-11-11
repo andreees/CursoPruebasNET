@@ -9,7 +9,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UPC.CursoPruebas.PL.UI.AppC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursoPruebas", "CursoPruebas\CursoPruebas.csproj", "{59DC5971-CB71-4F2A-A485-521090587A38}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UPC.CursoPruebas.DL.DALC.Pruebas", "UPC.CursoPruebas.DL.DALC.Pruebas\UPC.CursoPruebas.DL.DALC.Pruebas.csproj", "{CFE871AF-65AD-4441-AEEE-443EF9F05D12}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7BAC67BD-8545-4C4F-A863-7F7CD13E2507}"
+	ProjectSection(SolutionItems) = preProject
+		CursoPruebas.vsmdi = CursoPruebas.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
 Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = CursoPruebas.vsmdi
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|Mixed Platforms = Debug|Mixed Platforms
@@ -59,6 +71,16 @@ Global
 		{59DC5971-CB71-4F2A-A485-521090587A38}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{59DC5971-CB71-4F2A-A485-521090587A38}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{59DC5971-CB71-4F2A-A485-521090587A38}.Release|x86.ActiveCfg = Release|Any CPU
+		{CFE871AF-65AD-4441-AEEE-443EF9F05D12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFE871AF-65AD-4441-AEEE-443EF9F05D12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFE871AF-65AD-4441-AEEE-443EF9F05D12}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{CFE871AF-65AD-4441-AEEE-443EF9F05D12}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{CFE871AF-65AD-4441-AEEE-443EF9F05D12}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CFE871AF-65AD-4441-AEEE-443EF9F05D12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFE871AF-65AD-4441-AEEE-443EF9F05D12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFE871AF-65AD-4441-AEEE-443EF9F05D12}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{CFE871AF-65AD-4441-AEEE-443EF9F05D12}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{CFE871AF-65AD-4441-AEEE-443EF9F05D12}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
