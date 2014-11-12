@@ -27,7 +27,7 @@ namespace UPC.CursoPruebas.TL.Test
         {
             selenium.Stop();
         }
-
+        
         [Test]
         public void ListarCurso_Invalido()
         {
@@ -41,7 +41,7 @@ namespace UPC.CursoPruebas.TL.Test
         
             Assert.True(lista!=null && lista.Count==0);
         }
-
+        /*
         [Test]
         public void ListarCurso_Valido()
         {
@@ -55,6 +55,7 @@ namespace UPC.CursoPruebas.TL.Test
 
             Assert.True(lista != null);
         }
+         
         
         [Test]
         public void CrearCurso_Valido()
@@ -84,7 +85,8 @@ namespace UPC.CursoPruebas.TL.Test
                 Assert.True(cantidadDeCursosAlFinal>cantidadDeCursosAlInicio);
             }
         }
-
+        
+        
         [Test]
         public void CrearCurso_Invalido()
         {
@@ -124,7 +126,8 @@ namespace UPC.CursoPruebas.TL.Test
                 Assert.Fail();
             }
         }
-
+        
+        
         [Test]
         public void ModificarCurso_Valido()
         {
@@ -147,7 +150,8 @@ namespace UPC.CursoPruebas.TL.Test
                 Assert.AreEqual(selenium.GetText("lblMensaje"), "El curso ha sido modificado correctamente.");
             }
         }
-
+        
+        
         [Test]
         public void ModificarCurso_Invalido()
         {
@@ -189,7 +193,8 @@ namespace UPC.CursoPruebas.TL.Test
                 Assert.Fail();
             }
         }
-
+        
+        
         [Test]
         public void EliminarCurso_Valido()
         {
@@ -208,5 +213,6 @@ namespace UPC.CursoPruebas.TL.Test
             Assert.True(cantidadDeCursosAlFinal==cantidadDeCursosAlInicio-1);
             
         }
+        */
     }
 }

@@ -86,7 +86,6 @@ namespace UPC.CursoPruebas.DL.DALC
             catch (Exception ex)
             {
                 //throw;
-                Console.WriteLine(ex.Message);
                 return null;
             }
         }
