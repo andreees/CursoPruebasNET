@@ -27,23 +27,12 @@ namespace UPC.CursoPruebas.TL.Test
         {
             selenium.Stop();
         }
+
+    
+        
         
         [Test]
-        public void ListarCurso_Invalido()
-        {
-            CursoDALC CursoD = new CursoDALC();
-        
-            selenium.Open("/ListarCurso.aspx");
-            selenium.WaitForPageToLoad("30000");
-        
-            List<CursoBE> lista;
-            lista = CursoD.ListarCursos();
-        
-            Assert.True(lista!=null && lista.Count==0);
-        }
-        /*
-        [Test]
-        public void ListarCurso_Valido()
+        public void ListarCursoValido()
         {
             CursoDALC CursoD = new CursoDALC();
 
@@ -58,7 +47,7 @@ namespace UPC.CursoPruebas.TL.Test
          
         
         [Test]
-        public void CrearCurso_Valido()
+        public void CrearCursoValido()
         {
             CursoDALC CursoD = new CursoDALC();
             int cantidadDeCursosAlInicio, cantidadDeCursosAlFinal;
@@ -88,7 +77,7 @@ namespace UPC.CursoPruebas.TL.Test
         
         
         [Test]
-        public void CrearCurso_Invalido()
+        public void CrearCursoInvalido()
         {
             CursoDALC CursoD = new CursoDALC();
             int cantidadDeCursosAlInicio, cantidadDeCursosAlFinal;
@@ -129,7 +118,7 @@ namespace UPC.CursoPruebas.TL.Test
         
         
         [Test]
-        public void ModificarCurso_Valido()
+        public void ModificarCursoValido()
         {
             //Leer de excel la data
             List<List<String>> data = new Excel().LeerExcel(1);
@@ -153,7 +142,7 @@ namespace UPC.CursoPruebas.TL.Test
         
         
         [Test]
-        public void ModificarCurso_Invalido()
+        public void ModificarCursoInvalido()
         {
             CursoDALC CursoD = new CursoDALC();
             int cantidadDeCursosAlInicio, cantidadDeCursosAlFinal;
@@ -196,7 +185,7 @@ namespace UPC.CursoPruebas.TL.Test
         
         
         [Test]
-        public void EliminarCurso_Valido()
+        public void EliminarCursoValido()
         {
             CursoDALC CursoD = new CursoDALC();
             int cantidadDeCursosAlInicio, cantidadDeCursosAlFinal;
@@ -213,6 +202,6 @@ namespace UPC.CursoPruebas.TL.Test
             Assert.True(cantidadDeCursosAlFinal==cantidadDeCursosAlInicio-1);
             
         }
-        */
+        
     }
 }

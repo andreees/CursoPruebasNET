@@ -17,7 +17,9 @@ namespace UPC.CursoPruebas.TL.Test
             int returnCode = NUnit.ConsoleRunner.Runner.Main(my_args);
 
             if (returnCode != 0)
+            {
                 Console.Beep();
+            }
         }
     }
 }

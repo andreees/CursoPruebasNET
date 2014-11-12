@@ -47,7 +47,7 @@ namespace UPC.CursoPruebas.TL.Test
             }
             catch (Exception e)
             {
-                String d = e.StackTrace;
+                //nada
             }
             return ListaExterna;
         }
