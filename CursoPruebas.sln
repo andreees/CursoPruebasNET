@@ -9,7 +9,22 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UPC.CursoPruebas.PL.UI.AppC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursoPruebas", "CursoPruebas\CursoPruebas.csproj", "{59DC5971-CB71-4F2A-A485-521090587A38}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8F4E2249-DC16-404D-9E9B-64CB8F926A53}"
+	ProjectSection(SolutionItems) = preProject
+		CursoPruebas.vsmdi = CursoPruebas.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UPC.CursoPruebas.TL.Test", "UPC.CursoPruebas.TL.Test\UPC.CursoPruebas.TL.Test.csproj", "{7B21B868-0420-4B03-9393-84AA579E4E8A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{59DC5971-CB71-4F2A-A485-521090587A38} = {59DC5971-CB71-4F2A-A485-521090587A38}
+	EndProjectSection
+EndProject
 Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = CursoPruebas.vsmdi
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|Mixed Platforms = Debug|Mixed Platforms
@@ -59,6 +74,16 @@ Global
 		{59DC5971-CB71-4F2A-A485-521090587A38}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{59DC5971-CB71-4F2A-A485-521090587A38}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{59DC5971-CB71-4F2A-A485-521090587A38}.Release|x86.ActiveCfg = Release|Any CPU
+		{7B21B868-0420-4B03-9393-84AA579E4E8A}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{7B21B868-0420-4B03-9393-84AA579E4E8A}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{7B21B868-0420-4B03-9393-84AA579E4E8A}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{7B21B868-0420-4B03-9393-84AA579E4E8A}.Debug|x86.ActiveCfg = Debug|x86
+		{7B21B868-0420-4B03-9393-84AA579E4E8A}.Debug|x86.Build.0 = Debug|x86
+		{7B21B868-0420-4B03-9393-84AA579E4E8A}.Release|Any CPU.ActiveCfg = Release|x86
+		{7B21B868-0420-4B03-9393-84AA579E4E8A}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{7B21B868-0420-4B03-9393-84AA579E4E8A}.Release|Mixed Platforms.Build.0 = Release|x86
+		{7B21B868-0420-4B03-9393-84AA579E4E8A}.Release|x86.ActiveCfg = Release|x86
+		{7B21B868-0420-4B03-9393-84AA579E4E8A}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

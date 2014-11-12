@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 using UPC.CursoPruebas.BL.BE;
 
-//using System.Data.SqlClient;
+
 using System.Data;
 using System.Configuration;
 
@@ -126,8 +126,7 @@ namespace UPC.CursoPruebas.DL.DALC
                 ds.Dispose();
                 return true;
 
-                //if (ObtenerCursoPorid(objCursoBE.IdCurso) == null)
-                  //  return;
+                
 
             
             }
