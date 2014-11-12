@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<TestSettings name="Trace and Test Impact" id="02aa4d88-95ba-4a2d-8b8d-67af80f6c3f5" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
-  <Description>These are test settings for Trace and Test Impact.</Description>
+<TestSettings name="Seguimiento e impacto en pruebas" id="69ae1676-586f-4ce0-b89d-51abc5ff4cb6" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Description>Esta es la configuración de las pruebas para el seguimiento e impacto en pruebas.</Description>
   <Execution>
     <TestTypeSpecific />
     <AgentRule name="Execution Agents">

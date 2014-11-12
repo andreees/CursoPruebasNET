@@ -23,7 +23,8 @@ namespace UPC.CursoPruebas.DL.DALC
             List<CursoBE> L;
             try
             {
-                sConn = ConfigurationManager.ConnectionStrings["CSCursoPruebas"].ToString();
+                //sConn = ConfigurationManager.ConnectionStrings["CSCursoPruebas"].ToString();
+                sConn = "server=localhost;database=matriculadb;user id=root";
                 MySqlConnection con = new MySqlConnection(sConn);
                 query = "SELECT * FROM curso";
                 MySqlDataAdapter da = new MySqlDataAdapter(query, con);
@@ -47,8 +48,8 @@ namespace UPC.CursoPruebas.DL.DALC
             }
             catch (Exception ex)
             {
-                
-                throw;
+                return null;
+                //throw;
             }
         }
         
@@ -59,7 +60,8 @@ namespace UPC.CursoPruebas.DL.DALC
 
             try
             {
-                sConn = ConfigurationManager.ConnectionStrings["CSCursoPruebas"].ToString();
+                //sConn = ConfigurationManager.ConnectionStrings["CSCursoPruebas"].ToString();
+                sConn = "server=localhost;database=matriculadb;user id=root";
                 MySqlConnection con = new MySqlConnection(sConn);
                 query = "SELECT * FROM curso WHERE idcurso=" + id.ToString();
                 MySqlDataAdapter da = new MySqlDataAdapter(query, con);
@@ -83,7 +85,9 @@ namespace UPC.CursoPruebas.DL.DALC
             }
             catch (Exception ex)
             {
-                throw;
+                //throw;
+                Console.WriteLine(ex.Message);
+                return null;
             }
         }
 
@@ -94,19 +98,20 @@ namespace UPC.CursoPruebas.DL.DALC
 
             try
             {
-                sConn = ConfigurationManager.ConnectionStrings["CSCursoPruebas"].ToString();
+                //sConn = ConfigurationManager.ConnectionStrings["CSCursoPruebas"].ToString();
+                sConn = "server=localhost;database=matriculadb;user id=root";
                 MySqlConnection con = new MySqlConnection(sConn);
                 query = "INSERT INTO curso(idcurso, nombre, codigo, creditos, requisitos, ciclo) VALUES('" + null + "','" + objCursoBE.Nombre + "','" + objCursoBE.Codigo + "'," + objCursoBE.Creditos.ToString() + ",'" + objCursoBE.Requisitos + "'," + objCursoBE.Ciclo.ToString() + ")";
                 MySqlDataAdapter da = new MySqlDataAdapter(query, con);
                 DataSet ds = new DataSet();
-                da.Fill(ds, "curso");
+                int res=da.Fill(ds, "curso");
                 ds.Dispose();
                 return true;
             }
             catch (Exception ex)
             {
                 return false;
-                throw;
+                //throw;
             }
         }
         
@@ -117,12 +122,13 @@ namespace UPC.CursoPruebas.DL.DALC
 
             try
             {
-                sConn = ConfigurationManager.ConnectionStrings["CSCursoPruebas"].ToString();
+                //sConn = ConfigurationManager.ConnectionStrings["CSCursoPruebas"].ToString();
+                sConn = "server=localhost;database=matriculadb;user id=root";
                 MySqlConnection con = new MySqlConnection(sConn);
                 query = "UPDATE curso SET nombre='"+objCursoBE.Nombre+"',codigo='"+objCursoBE.Codigo+"',creditos="+objCursoBE.Creditos.ToString()+",requisitos='"+objCursoBE.Requisitos+"',ciclo="+objCursoBE.Ciclo.ToString()+" WHERE idcurso="+objCursoBE.IdCurso.ToString();
                 MySqlDataAdapter da = new MySqlDataAdapter(query, con);
                 DataSet ds = new DataSet();
-                da.Fill(ds, "curso");
+                int res=da.Fill(ds, "curso");
                 ds.Dispose();
                 return true;
 
@@ -133,7 +139,7 @@ namespace UPC.CursoPruebas.DL.DALC
             catch(Exception ex)
             {
                 return false;
-                throw;
+                //throw;
             }
         }
 
@@ -144,7 +150,8 @@ namespace UPC.CursoPruebas.DL.DALC
 
             try
             {
-                sConn = ConfigurationManager.ConnectionStrings["CSCursoPruebas"].ToString();
+                //sConn = ConfigurationManager.ConnectionStrings["CSCursoPruebas"].ToString();
+                sConn = "server=localhost;database=matriculadb;user id=root";
                 MySqlConnection con = new MySqlConnection(sConn);
                 query = "DELETE FROM curso WHERE idcurso="+id.ToString();
                 MySqlDataAdapter da = new MySqlDataAdapter(query, con);
@@ -156,7 +163,7 @@ namespace UPC.CursoPruebas.DL.DALC
             catch (Exception ex)
             {
                 return false;
-                throw;
+                //throw;
             }
         }
     }
