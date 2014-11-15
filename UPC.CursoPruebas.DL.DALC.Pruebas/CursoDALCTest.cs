@@ -87,7 +87,7 @@ namespace UPC.CursoPruebas.DL.DALC.Pruebas
         ///Una prueba de ListarCursos
         ///</summary>
         
-        /*
+        
         [TestMethod()]
         public void ListarCursosInvalidoTest()
         {
@@ -98,7 +98,7 @@ namespace UPC.CursoPruebas.DL.DALC.Pruebas
             actual = target.ListarCursos();
             Assert.AreEqual(expected, actual.Count);
         }
-        */
+        
 
 
         /// <summary>
