@@ -18,7 +18,7 @@ namespace UPC.CursoPruebas.DL.DALC.Pruebas
     [TestClass()]
     public class CursoDALCTest
     {
-        const int ID = 1;
+        const int ID = 11;
 
         private TestContext testContextInstance;
 
@@ -39,33 +39,7 @@ namespace UPC.CursoPruebas.DL.DALC.Pruebas
         }
 
         #region Atributos de prueba adicionales
-        // 
-        //Puede utilizar los siguientes atributos adicionales mientras escribe sus pruebas:
-        //
-        //Use ClassInitialize para ejecutar código antes de ejecutar la primera prueba en la clase 
-        //[ClassInitialize()]
-        //public static void MyClassInitialize(TestContext testContext)
-        //{
-        //}
-        //
-        //Use ClassCleanup para ejecutar código después de haber ejecutado todas las pruebas en una clase
-        //[ClassCleanup()]
-        //public static void MyClassCleanup()
-        //{
-        //}
-        //
-        //Use TestInitialize para ejecutar código antes de ejecutar cada prueba
-        //[TestInitialize()]
-        //public void MyTestInitialize()
-        //{
-        //}
-        //
-        //Use TestCleanup para ejecutar código después de que se hayan ejecutado todas las pruebas
-        //[TestCleanup()]
-        //public void MyTestCleanup()
-        //{
-        //}
-        //
+        
         #endregion
 
 
@@ -76,7 +50,7 @@ namespace UPC.CursoPruebas.DL.DALC.Pruebas
         public void ListarCursosValidoTest()
         {
             CursoDALC target = new CursoDALC(); // TODO: Inicializar en un valor adecuado
-            //List<CursoBE> expected = null; // TODO: Inicializar en un valor adecuado
+            // TODO: Inicializar en un valor adecuado
             List<CursoBE> actual;
             actual = target.ListarCursos();
             int expected = 1;
@@ -86,7 +60,6 @@ namespace UPC.CursoPruebas.DL.DALC.Pruebas
         /// <summary>
         ///Una prueba de ListarCursos
         ///</summary>
-        
         
         [TestMethod()]
         public void ListarCursosInvalidoTest()
@@ -144,7 +117,7 @@ namespace UPC.CursoPruebas.DL.DALC.Pruebas
         {
             CursoDALC target = new CursoDALC(); // TODO: Inicializar en un valor adecuado
             int id = ID; // TODO: Inicializar en un valor adecuado
-            //CursoBE expected = null; // TODO: Inicializar en un valor adecuado
+            
             CursoBE actual;
             actual = target.ObtenerCursoPorid(id);
             Assert.AreEqual(id, actual.IdCurso);
@@ -178,23 +151,7 @@ namespace UPC.CursoPruebas.DL.DALC.Pruebas
             Assert.AreEqual(expected, actual);
         }
 
-        /*
-        /// <summary>
-        ///Una prueba de EliminarCurso
-        ///</summary>
-        [TestMethod()]
-        public void EliminarCursoInvalidoTest()
-        {
-            CursoDALC target = new CursoDALC(); // TODO: Inicializar en un valor adecuado
-            int id = -4; // TODO: Inicializar en un valor adecuado
-            bool expected = false; // TODO: Inicializar en un valor adecuado
-            bool actual;
-            actual = target.EliminarCurso(id);
-            Assert.AreEqual(expected, actual);
-
-        }
-
-         * */
+        
         /// <summary>
         ///Una prueba de ActualizarCurso
         ///</summary>

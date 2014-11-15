@@ -13,7 +13,7 @@ namespace UPC.CursoPruebas.PL.UI.AppConsole
     {
         static void Main(string[] args)
         {
-            InsertarCurso("IA1", "SI101", 3, "Nada", 1);
+            
             Console.ReadLine();
         }
         static void ListarTodo()

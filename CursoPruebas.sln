@@ -18,6 +18,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UPC.CursoPruebas.TL.Test", "UPC.CursoPruebas.TL.Test\UPC.CursoPruebas.TL.Test.csproj", "{7B21B868-0420-4B03-9393-84AA579E4E8A}"
+EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = CursoPruebas.vsmdi
@@ -81,6 +83,16 @@ Global
 		{CFE871AF-65AD-4441-AEEE-443EF9F05D12}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{CFE871AF-65AD-4441-AEEE-443EF9F05D12}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{CFE871AF-65AD-4441-AEEE-443EF9F05D12}.Release|x86.ActiveCfg = Release|Any CPU
+		{7B21B868-0420-4B03-9393-84AA579E4E8A}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{7B21B868-0420-4B03-9393-84AA579E4E8A}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{7B21B868-0420-4B03-9393-84AA579E4E8A}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{7B21B868-0420-4B03-9393-84AA579E4E8A}.Debug|x86.ActiveCfg = Debug|x86
+		{7B21B868-0420-4B03-9393-84AA579E4E8A}.Debug|x86.Build.0 = Debug|x86
+		{7B21B868-0420-4B03-9393-84AA579E4E8A}.Release|Any CPU.ActiveCfg = Release|x86
+		{7B21B868-0420-4B03-9393-84AA579E4E8A}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{7B21B868-0420-4B03-9393-84AA579E4E8A}.Release|Mixed Platforms.Build.0 = Release|x86
+		{7B21B868-0420-4B03-9393-84AA579E4E8A}.Release|x86.ActiveCfg = Release|x86
+		{7B21B868-0420-4B03-9393-84AA579E4E8A}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
