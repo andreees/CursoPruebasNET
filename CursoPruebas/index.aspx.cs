@@ -7,9 +7,14 @@ using System.Web.UI.WebControls;
 
 namespace CursoPruebas
 {
-    public partial class index : System.Web.UI.Page
+    public partial class Index : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
+        public Index()
+        {
+            this.Load += new EventHandler(PageLoad);
+        }
+
+        protected void PageLoad(object sender, EventArgs e)
         {
             //vacío
         }

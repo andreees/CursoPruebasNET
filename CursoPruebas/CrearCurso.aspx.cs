@@ -12,12 +12,17 @@ namespace CursoPruebas
 {
     public partial class CrearCurso : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
+        public CrearCurso()
+        {
+            this.Load += new EventHandler(PageLoad);
+        }
+
+        protected void PageLoad(object sender, EventArgs e)
         {
             divResultado.Visible = false;
         }
 
-        protected void lnkCrearCurso(object sender, EventArgs e)
+        protected void LnkCrearCurso(object sender, EventArgs e)
         {
             CursoBE objCursoBE = new CursoBE();
             objCursoBE.Nombre = txtNombre.Text;
@@ -27,7 +32,15 @@ namespace CursoPruebas
             objCursoBE.Ciclo = Convert.ToInt32(txtCiclo.Text);
 
             CursoDALC objCursoDALC = new CursoDALC();
-            divResultado.Visible = objCursoDALC.InsertarCurso(objCursoBE);
+            if (objCursoDALC.InsertarCurso(objCursoBE))
+            {
+                divResultado.Visible = true;
+                txtNombre.Text = "";
+                txtCodigo.Text = "";
+                txtCreditos.Text = "";
+                txtRequisitos.Text = "";
+                txtCiclo.Text = "";
+            }
         }
     }
 }

@@ -12,7 +12,12 @@ namespace CursoPruebas
 {
     public partial class ModificarCurso2 : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
+        public ModificarCurso2()
+        {
+            this.Load += new EventHandler(PageLoad);
+        }
+
+        protected void PageLoad(object sender, EventArgs e)
         {
             if (!(Page.IsPostBack))
             {
@@ -33,7 +38,7 @@ namespace CursoPruebas
             }
         }
 
-        protected void lnkGuardarCurso(object sender, EventArgs e)
+        protected void LnkGuardarCurso(object sender, EventArgs e)
         {
             CursoBE objCursoBE = new CursoBE();
             objCursoBE.IdCurso = Convert.ToInt32(ViewState["idCurso"]);

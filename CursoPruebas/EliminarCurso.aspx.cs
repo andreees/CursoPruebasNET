@@ -12,22 +12,30 @@ namespace CursoPruebas
 {
     public partial class EliminarCurso : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
+        public EliminarCurso()
         {
+            this.Load += new EventHandler(PageLoad);
+        }
+
+        protected void PageLoad(object sender, EventArgs e)
+        {
+            divResultado.Visible = false;
             CursoDALC objCursoDALC = new CursoDALC();
 
             grdCursos.DataSource = objCursoDALC.ListarCursos();
             grdCursos.DataBind();
         }
 
-        protected void grdProductos_RowCommand(object sender, GridViewCommandEventArgs e)
+        protected void GrdProductosRowCommand(object sender, GridViewCommandEventArgs e)
         {
             if (e.CommandName.ToUpper().Equals("CMDELIMINAR"))
             {
                 CursoDALC objCursoDALC = new CursoDALC();
                 int idCurso = Convert.ToInt32(e.CommandArgument);
                 objCursoDALC.EliminarCurso(idCurso);
-                Response.Redirect("EliminarCurso.aspx");
+                grdCursos.DataSource = objCursoDALC.ListarCursos();
+                grdCursos.DataBind();
+                divResultado.Visible = true;
             }
         }
     }

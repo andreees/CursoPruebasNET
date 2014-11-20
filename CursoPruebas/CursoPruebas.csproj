@@ -103,13 +103,13 @@
     <Content Include="imagenes\imagenAdmin.png" />
     <Content Include="imagenes\logoUPC.png" />
     <Content Include="imagenes\matriculaFacil.png" />
-    <Content Include="index.aspx" />
+    <Content Include="Index.aspx" />
     <Content Include="js\kickstart.js" />
     <Content Include="ListarCurso.aspx" />
     <Content Include="ModificarCurso.aspx" />
     <Content Include="ModificarCurso2.aspx" />
     <Content Include="template\CabeceraT.aspx" />
-    <Content Include="template\footer.aspx" />
+    <Content Include="template\Footer.aspx" />
     <Content Include="template\MenuLateralT.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -134,12 +134,12 @@
     <Compile Include="EliminarCurso.aspx.designer.cs">
       <DependentUpon>EliminarCurso.aspx</DependentUpon>
     </Compile>
-    <Compile Include="index.aspx.cs">
-      <DependentUpon>index.aspx</DependentUpon>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="index.aspx.designer.cs">
-      <DependentUpon>index.aspx</DependentUpon>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
     <Compile Include="ListarCurso.aspx.cs">
       <DependentUpon>ListarCurso.aspx</DependentUpon>
@@ -170,12 +170,12 @@
     <Compile Include="template\CabeceraT.aspx.designer.cs">
       <DependentUpon>CabeceraT.aspx</DependentUpon>
     </Compile>
-    <Compile Include="template\footer.aspx.cs">
-      <DependentUpon>footer.aspx</DependentUpon>
+    <Compile Include="template\Footer.aspx.cs">
+      <DependentUpon>Footer.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="template\footer.aspx.designer.cs">
-      <DependentUpon>footer.aspx</DependentUpon>
+    <Compile Include="template\Footer.aspx.designer.cs">
+      <DependentUpon>Footer.aspx</DependentUpon>
     </Compile>
     <Compile Include="template\MenuLateralT.aspx.cs">
       <DependentUpon>MenuLateralT.aspx</DependentUpon>

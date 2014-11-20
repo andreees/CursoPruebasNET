@@ -100,7 +100,8 @@ namespace UPC.CursoPruebas.DL.DALC
                 
                 sConn = "server=localhost;database=matriculadb;user id=root";
                 MySqlConnection con = new MySqlConnection(sConn);
-                query = "INSERT INTO curso(idcurso, nombre, codigo, creditos, requisitos, ciclo) VALUES('" + null + "','" + objCursoBE.Nombre + "','" + objCursoBE.Codigo + "'," + objCursoBE.Creditos.ToString() + ",'" + objCursoBE.Requisitos + "'," + objCursoBE.Ciclo.ToString() + ")";
+                query = "INSERT INTO curso(idcurso, nombre, codigo, creditos, requisitos, ciclo) VALUES('" + null + "','" + objCursoBE.Nombre + "','" + objCursoBE.Codigo + 
+                    "'," + objCursoBE.Creditos.ToString() + ",'" + objCursoBE.Requisitos + "'," + objCursoBE.Ciclo.ToString() + ")";
                 MySqlDataAdapter da = new MySqlDataAdapter(query, con);
                 DataSet ds = new DataSet();
                 da.Fill(ds, "curso");
@@ -124,7 +125,8 @@ namespace UPC.CursoPruebas.DL.DALC
                 
                 sConn = "server=localhost;database=matriculadb;user id=root";
                 MySqlConnection con = new MySqlConnection(sConn);
-                query = "UPDATE curso SET nombre='"+objCursoBE.Nombre+"',codigo='"+objCursoBE.Codigo+"',creditos="+objCursoBE.Creditos.ToString()+",requisitos='"+objCursoBE.Requisitos+"',ciclo="+objCursoBE.Ciclo.ToString()+" WHERE idcurso="+objCursoBE.IdCurso.ToString();
+                query = "UPDATE curso SET nombre='"+objCursoBE.Nombre+"',codigo='"+objCursoBE.Codigo+"',creditos="+objCursoBE.Creditos.ToString()+
+                    ",requisitos='"+objCursoBE.Requisitos+"',ciclo="+objCursoBE.Ciclo.ToString()+" WHERE idcurso="+objCursoBE.IdCurso.ToString();
                 MySqlDataAdapter da = new MySqlDataAdapter(query, con);
                 DataSet ds = new DataSet();
                 da.Fill(ds, "curso");

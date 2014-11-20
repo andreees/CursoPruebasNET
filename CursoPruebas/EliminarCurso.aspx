@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="EliminarCurso.aspx.cs" Inherits="CursoPruebas.EliminarCurso" %>
+﻿<%@ Page Language="C#" CodeBehind="EliminarCurso.aspx.cs" Inherits="CursoPruebas.EliminarCurso" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -27,7 +27,7 @@
             <div id="ContenidoCentral">
                 <h3 id="MensajeBienvenida">Eliminar Cursos</h3><br>
                  <!------>
-                <asp:GridView ID="grdCursos" runat="server" CssClass="sortable" AutoGenerateColumns="false" OnRowCommand="grdProductos_RowCommand">
+                <asp:GridView ID="grdCursos" runat="server" CssClass="sortable" AutoGenerateColumns="false" OnRowCommand="GrdProductosRowCommand">
                 <Columns>
                     <asp:TemplateField HeaderText="Código" ItemStyle-HorizontalAlign="Center" HeaderStyle-HorizontalAlign="Center">
                         <ItemTemplate>
@@ -48,6 +48,9 @@
                 </Columns>
                 </asp:GridView>
                 <!------>
+                <!-- Success -->
+                    <div runat="server" id="divResultado" class="notice success"><i class="icon-ok icon-large"></i><label id="lblMensaje">Curso eliminado Correctamente.</label> 
+                        <a href="#close" class="icon-remove"></a></div>
             </div>
             <label style="text-align: center;color: transparent">-----***PRUEBAS DE SOFTWARE***-----</label>
             <!--#include file="template/footer.aspx"-->

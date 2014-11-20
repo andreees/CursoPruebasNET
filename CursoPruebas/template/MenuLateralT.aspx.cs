@@ -9,7 +9,12 @@ namespace CursoPruebas.template
 {
     public partial class MenuLateralT : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
+        public MenuLateralT()
+        {
+            this.Load += new EventHandler(PageLoad);
+        }
+
+        protected void PageLoad(object sender, EventArgs e)
         {
             //vacío
         }

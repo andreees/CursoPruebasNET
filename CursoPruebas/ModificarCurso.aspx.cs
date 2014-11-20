@@ -12,7 +12,12 @@ namespace CursoPruebas
 {
     public partial class ModificarCurso : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
+        public ModificarCurso()
+        {
+            this.Load += new EventHandler(PageLoad);
+        }
+
+        protected void PageLoad(object sender, EventArgs e)
         {
             CursoDALC objCursoDALC = new CursoDALC();
 
@@ -20,7 +25,7 @@ namespace CursoPruebas
             grdCursos.DataBind();
         }
 
-        protected void grdProductos_RowCommand(object sender, GridViewCommandEventArgs e)
+        protected void GrdProductosRowCommand(object sender, GridViewCommandEventArgs e)
         {
             if (e.CommandName.ToUpper().Equals("CMDMODIFICAR"))
             {

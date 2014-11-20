@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ModificarCurso2.aspx.cs" Inherits="CursoPruebas.ModificarCurso2" %>
+﻿<%@ Page Language="C#" CodeBehind="ModificarCurso2.aspx.cs" Inherits="CursoPruebas.ModificarCurso2" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -81,7 +81,7 @@
                         <tr>
                             <td></td>
                             <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <asp:LinkButton ID="btnModificarCurso" runat="server" OnClick="lnkGuardarCurso">Modificar Curso</asp:LinkButton>
+                                <asp:LinkButton ID="btnModificarCurso" runat="server" OnClick="LnkGuardarCurso">Modificar Curso</asp:LinkButton>
                             </td>
                         </tr>
                     </table>

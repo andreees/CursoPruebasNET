@@ -9,7 +9,12 @@ namespace CursoPruebas.template
 {
     public partial class CabeceraT : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
+        public CabeceraT()
+        {
+            this.Load += new EventHandler(PageLoad);
+        }
+
+        protected void PageLoad(object sender, EventArgs e)
         {
             //vacío
         }

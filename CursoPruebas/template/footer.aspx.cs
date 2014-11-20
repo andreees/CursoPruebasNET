@@ -7,9 +7,14 @@ using System.Web.UI.WebControls;
 
 namespace CursoPruebas.template
 {
-    public partial class footer : System.Web.UI.Page
+    public partial class Footer : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
+        public Footer()
+        {
+            this.Load += new EventHandler(PageLoad);
+        }
+
+        protected void PageLoad(object sender, EventArgs e)
         {
             //vacío
         }

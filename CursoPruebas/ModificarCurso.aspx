@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ModificarCurso.aspx.cs" Inherits="CursoPruebas.ModificarCurso" %>
+﻿<%@ Page Language="C#" CodeBehind="ModificarCurso.aspx.cs" Inherits="CursoPruebas.ModificarCurso" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -27,7 +27,7 @@
             <div id="ContenidoCentral">
                 <h3 id="MensajeBienvenida">Modificar Cursos</h3><br>
                 <!------>
-                <asp:GridView ID="grdCursos" runat="server" CssClass="sortable" AutoGenerateColumns="false" OnRowCommand="grdProductos_RowCommand">
+                <asp:GridView ID="grdCursos" runat="server" CssClass="sortable" AutoGenerateColumns="false" OnRowCommand="GrdProductosRowCommand">
                 <Columns>
                     <asp:TemplateField HeaderText="Código" ItemStyle-HorizontalAlign="Center" HeaderStyle-HorizontalAlign="Center">
                         <ItemTemplate>

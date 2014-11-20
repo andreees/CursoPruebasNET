@@ -11,25 +11,21 @@ using Selenium;
 namespace UPC.CursoPruebas.TL.Test
 {
     [TestFixture]
-    public class CursoTest  
-    {   
+    public class CursoTest
+    {
         private ISelenium selenium;
-        
+
         [TestFixtureSetUp]
         public void Init()
         {
             selenium = new DefaultSelenium("localhost", 4441, "firefox", "http://localhost:9312/");
-			selenium.Start();
+            selenium.Start();
         }
 
-        [TestFixtureTearDown]
-        public void Dispose()
+        [TestFixtureTearDown]public void Dispose()
         {
             selenium.Stop();
         }
-
-    
-        
         
         [Test]
         public void ListarCursoValido()

@@ -12,7 +12,12 @@ namespace CursoPruebas
 {
     public partial class ListarCurso : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
+        public ListarCurso()
+        {
+            this.Load += new EventHandler(PageLoad);
+        }
+
+        protected void PageLoad(object sender, EventArgs e)
         {
             CursoDALC objCursoDALC = new CursoDALC();
 
