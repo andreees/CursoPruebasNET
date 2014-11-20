@@ -18,7 +18,7 @@ namespace UPC.CursoPruebas.DL.DALC.Pruebas
     [TestClass()]
     public class CursoDALCTest
     {
-        const int ID = 11;
+        const int ID = 16;
 
         private TestContext testContextInstance;
 
@@ -56,23 +56,6 @@ namespace UPC.CursoPruebas.DL.DALC.Pruebas
             int expected = 1;
             Assert.AreEqual(expected > 0, actual.Count > 0);
         }
-
-        /// <summary>
-        ///Una prueba de ListarCursos
-        ///</summary>
-        
-        [TestMethod()]
-        public void ListarCursosInvalidoTest()
-        {
-            CursoDALC target = new CursoDALC(); // TODO: Inicializar en un valor adecuado
-            
-            int expected = 0;
-            List<CursoBE> actual;
-            actual = target.ListarCursos();
-            Assert.AreEqual(expected, actual.Count);
-        }
-        
-
 
         /// <summary>
         ///Una prueba de InsertarCurso
