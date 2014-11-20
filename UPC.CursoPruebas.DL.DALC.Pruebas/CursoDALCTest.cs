@@ -61,7 +61,17 @@ namespace UPC.CursoPruebas.DL.DALC.Pruebas
         ///Una prueba de ListarCursos
         ///</summary>
         
-       
+        [TestMethod()]
+        public void ListarCursosInvalidoTest()
+        {
+            CursoDALC target = new CursoDALC(); // TODO: Inicializar en un valor adecuado
+            //List<CursoBE> expected = null; // TODO: Inicializar en un valor adecuado
+            int expected = 0;
+            List<CursoBE> actual;
+            actual = target.ListarCursos();
+            Assert.AreEqual(expected, actual.Count);
+        }
+        
 
 
         /// <summary>
