@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
-    <title>Cursos - Listar</title>
+    <title>Cursos - Modificar</title>
     <link rel="shortcut icon" type="image/x-icon" href="imagenes/iconoMF.png" />
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/kickstart.js"></script> <!-- KICKSTART -->

@@ -18,7 +18,7 @@ namespace UPC.CursoPruebas.DL.DALC.Pruebas
     [TestClass()]
     public class CursoDALCTest
     {
-        const int ID = 16;
+        const int ID = 20;
 
         private TestContext testContextInstance;
 
