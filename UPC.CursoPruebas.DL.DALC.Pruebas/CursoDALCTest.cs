@@ -18,7 +18,7 @@ namespace UPC.CursoPruebas.DL.DALC.Pruebas
     [TestClass()]
     public class CursoDALCTest
     {
-        const int ID = 20;
+        const int ID = 1;
 
         private TestContext testContextInstance;
 
@@ -103,7 +103,10 @@ namespace UPC.CursoPruebas.DL.DALC.Pruebas
             
             CursoBE actual;
             actual = target.ObtenerCursoPorid(id);
-            Assert.AreEqual(id, actual.IdCurso);
+            if(actual!=null)
+                Assert.AreEqual(id, actual.IdCurso);
+            else
+                Assert.AreEqual(null, actual);
         }
 
         /// <summary>
