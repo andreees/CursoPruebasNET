@@ -1,0 +1,2 @@
+Carpeta donde se encontrara todos los archivos generados 
+al ejecutar el Selenium a todos los casos de pruebas.
