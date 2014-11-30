@@ -1,2 +1,0 @@
-Documento en Word con todas las especificaciones de caso de uso,  
-basándose en la plantilla de “Especificaciones de caso de Uso”.
