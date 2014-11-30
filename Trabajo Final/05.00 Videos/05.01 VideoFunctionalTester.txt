@@ -1,0 +1,2 @@
+Archivo de video  cuando creo y ejecuto el Rational Functional 
+Tester para el caso de uso del principal del sistema.
