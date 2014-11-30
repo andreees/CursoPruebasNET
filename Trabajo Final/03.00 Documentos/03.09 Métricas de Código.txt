@@ -1,2 +1,0 @@
-Documento en Word donde se presentan la captura de pantalla del Sonar. 
-Especificando que reglas no se corrigieron y porque.
