@@ -1,2 +1,0 @@
-Documento en Word que representa el informe final después de haber aplicado 
-todas las pruebas, basándose en la plantilla de “Informe de Pruebas”.
