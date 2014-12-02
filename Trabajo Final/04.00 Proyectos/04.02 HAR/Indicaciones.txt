@@ -1,2 +1,0 @@
-Carpeta donde se encontrara todos los archivos HAR, 
-los archivos HAR tiene que tener el formato siguiente “nombrePagina.har”
